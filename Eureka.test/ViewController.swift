@@ -6,7 +6,7 @@
 //  Copyright © 2018 itrump. All rights reserved.
 //
 
-import UIKit
+/*import UIKit
 
 class ViewController: UIViewController {
 
@@ -21,5 +21,22 @@ class ViewController: UIViewController {
     }
 
 
-}
+}*/
 
+import UIKit
+import Eureka
+
+class ViewController: FormViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        form +++ Section()
+            <<< TextRow(){ row in
+                row.title = "Name"
+            }
+            <<< DateRow(){
+                $0.title = "Birthdate"
+                $0.value = Date()
+                }
+    }
+}
